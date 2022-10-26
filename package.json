@@ -1,0 +1,26 @@
+{
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "Module 10 Assignment",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "Test123"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jimmy-Vela06/Team-Profile-Generator.git"
+  },
+  "author": "Jimmy Vela",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jimmy-Vela06/Team-Profile-Generator/issues"
+  },
+  "homepage": "https://github.com/Jimmy-Vela06/Team-Profile-Generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
