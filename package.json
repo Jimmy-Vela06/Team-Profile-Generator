@@ -4,11 +4,10 @@
   "description": "Module 10 Assignment",
   "main": "index.js",
   "directories": {
-    "lib": "lib",
-    "test": "tests"
+    "lib": "lib"
   },
   "scripts": {
-    "test": "Test123"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
