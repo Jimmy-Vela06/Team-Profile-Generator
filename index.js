@@ -9,40 +9,39 @@ const fs = require("fs");
 const inquirer = require("inquirer");
 
 // generates HTML file
-const generateHtml = require("./utils/generateHTML.js");
+// const generateHtml = require("./utils/generateHTML.js");
 
-const team = [];
+const teamArray = [];
 
 const managerPrompt = () => {
   console.log("\x1b[32m%s\x1b[0m", "BUILD YOUR TEAM");
-  return inquirer
-    .prompt([
-      {
-        type: "input",
-        name: "name",
-        message: "Please enter the team managers name.",
-      },
-      {
-        type: "input",
-        name: "id",
-        message: "Enter mangers ID.",
-      },
-      {
-        type: "input",
-        name: "email",
-        message: "Enter managers email",
-      },
-      {
-        type: "input",
-        name: "officeNumber",
-        message: "Enter managers office number.",
-      },
-    ])
-    .then((answers) => {
-      const { name, id, email, officeNumber } = answers;
-      const manager = new Manager(name, id, email, officeNumber);
-      team.push(manager);
-    });
+  return inquirer.prompt([
+    {
+      type: "input",
+      name: "name",
+      message: "Please enter the team managers name.",
+    },
+    {
+      type: "input",
+      name: "id",
+      message: "Enter mangers ID.",
+    },
+    {
+      type: "input",
+      name: "email",
+      message: "Enter managers email",
+    },
+    {
+      type: "input",
+      name: "officeNumber",
+      message: "Enter managers office number.",
+    },
+  ]);
+  // .then((answers) => {
+  //   const { name, id, email, officeNumber } = answers;
+  //   const manager = new Manager(name, id, email, officeNumber);
+  //   teamArray.push(manager);
+  // });
 };
 
 const emoloyeePrompt = () => {
@@ -89,7 +88,7 @@ const emoloyeePrompt = () => {
         default: false,
       },
     ])
-    .then((employeeData) => {
+    .then((employeeAnswers) => {
       // data for employee types
 
       let {
@@ -100,7 +99,7 @@ const emoloyeePrompt = () => {
         github,
         school,
         confirmAddEmployee,
-      } = employeeData;
+      } = employeeAnswers;
       let employee;
 
       if (role === "Engineer") {
@@ -113,13 +112,22 @@ const emoloyeePrompt = () => {
         console.log(employee);
       }
 
-      team.push(employee);
+      teamArray.push(employee);
 
       if (confirmAddEmployee) {
-        return addEmployee(team);
+        return addEmployee(teamArray);
       } else {
-        return team;
+        return teamArray;
       }
     });
 };
-emoloyeePrompt();
+managerPrompt().then(emoloyeePrompt);
+//   .then((team) => {
+//     return generateHTML(team);
+//   })
+//   .then((pageHTML) => {
+//     return writeFile(pageHTML);
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
