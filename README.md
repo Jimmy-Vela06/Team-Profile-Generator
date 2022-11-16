@@ -68,5 +68,4 @@ SOFTWARE.
 ## **Questions:**
 
 If you have any contacat the following
-GitHub: <https://github.com/my name>
 Email: <jimmyvela06@gmail.com>
