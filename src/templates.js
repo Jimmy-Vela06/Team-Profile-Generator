@@ -56,7 +56,7 @@ const generateIntern = (intern) => {
             <div class="card-body m-2">
                 <p class="id">ID: ${id}</p>
                 <p class="email">Email:<a href="mailto:${email}">${email}</a></p>
-                <p class="school">School: ${school}</p>
+                <p class="school">School: ${school} </p>
             </div>
     </div>
 </div>
