@@ -112,7 +112,7 @@ const teamPrompt = () => {
         type: "list",
         name: "teamMemberChoice",
         message: "Which team member would like to add?",
-        choices: ["Engineer", "Intern", "I've finished my team"],
+        choices: ["Engineer", "Intern", "I've finished my team."],
       },
     ])
     .then((answer) => {

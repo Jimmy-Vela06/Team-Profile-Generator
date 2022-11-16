@@ -7,8 +7,9 @@ const generateManager = (manager) => {
         <div class="card h-100">
             <div class="card-header p-3" id="managerHeader">
                 <h3>${name}</h3>
+                <h4>Manager</h4>
                 <i class="material-icons">person</i>
-                <h4>Manager</h4><i class="material-icons">content_paste</i>
+                <i class="material-icons">content_paste</i>
             </div>
             <div class="card-body m-2">
                 <p class="id">ID: ${id}</p>
