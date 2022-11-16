@@ -1,0 +1,21 @@
+#navbar {
+  background-color: #3a6b98;
+}
+
+#navbar-text {
+  padding: 15px;
+  color: aliceblue;
+  font-size: 40px;
+}
+
+#managerHeader {
+  background-color: #fa9e9e;
+}
+
+#engineerHeader {
+  background-color: #b6f3c1;
+}
+
+#internHeader {
+  background-color: #d4e6f7;
+}
