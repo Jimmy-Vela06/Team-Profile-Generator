@@ -1,5 +1,9 @@
 # **TEAM PROFILE GENERATOR**
 
+## Video
+
+https://drive.google.com/file/d/1p6uN7POy10zzkME2B59lbGXwGLqEWku0/view
+
 ## [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)]
 
 ## **Table of Contents:**
@@ -15,8 +19,6 @@
 ### [License](#license)
 
 ### [Questions](#questions)
-
-### [Images](#images)
 
 ## **Description:**
 
@@ -68,5 +70,3 @@ SOFTWARE.
 If you have any contacat the following
 GitHub: <https://github.com/my name>
 Email: <jimmyvela06@gmail.com>
-
-## **Images:**
